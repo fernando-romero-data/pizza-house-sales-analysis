@@ -26,7 +26,6 @@ order-to-customer linkage in the POS data.
 ---
 
 ## Detailed Analysis Summary
-# 🍕 Pizza House Sales Analysis
 
 ## Project Overview
 This project analyzes point-of-sale (POS) data from a pizza restaurant to
