@@ -101,9 +101,3 @@ order-to-customer linkage in the POS data. This limitation is common in real-wor
 POS systems and is documented transparently.
 
 ---
-
-## 🚀 Next Steps
-- Demand forecasting by hour and day
-- Experiment design for off-peak promotions
-- Customer segmentation using linked POS or loyalty data
-
