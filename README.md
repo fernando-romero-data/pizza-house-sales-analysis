@@ -36,7 +36,6 @@ predictive modeling.
 - Handling real-world data limitations
 
 ---
-
 ## 🗂️ Project Structure
 
 ```text
@@ -49,6 +48,10 @@ pizza-house-sales-analysis/
 │   └── cleaned/
 ├── README.md
 └── .gitignore
+
+```
+
+---
 
 ## 🔍 Analysis Overview
 
