@@ -43,6 +43,7 @@ strategy.
 ## Project Structure
 
 pizza-house-sales-analysis/
+
 ├── notebooks/
 │   ├── 02_order_items_exploratory_analysis.ipynb
 │   └── 03_order_and_customer_segmentation.ipynb
