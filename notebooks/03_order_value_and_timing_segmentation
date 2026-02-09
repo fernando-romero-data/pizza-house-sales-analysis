@@ -5,7 +5,7 @@
    "id": "325f71e9",
    "metadata": {},
    "source": [
-    "# 03 — Order & Customer Segmentation (Phase 4)\n",
+    "# 03 — Order & Timing Segmentation (Phase 4)\n",
     "\n",
     "Phase 4 shifts from descriptive analysis (Phase 3) to segmentation.  \n",
     "The goal is to identify meaningful order and customer behavior patterns that can inform:\n",
