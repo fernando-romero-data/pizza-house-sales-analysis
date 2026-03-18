@@ -1,124 +1,118 @@
-# 🍕 Pizza House Sales Analysis
+# 🍕 Pizza House Sales Analysis — End-to-End Revenue & Strategy System
 
-### Data Science Case Study • POS Analytics • Behavioral Segmentation
+## 📊 Overview
 
----
+This project analyzes point-of-sale (POS) data from a pizza restaurant to uncover revenue drivers, pricing inefficiencies, and strategic growth opportunities.
 
-## 👋 Project Summary
-
-This project analyzes point-of-sale (POS) data from a pizza restaurant to
-understand **what drives revenue**, **when demand occurs**, and **how ordering
-behavior changes across time and channels**.
-
-The analysis emphasizes **interpretable insights** and **real-world decision
-making**, using exploratory analysis and order-level segmentation rather than
-predictive modeling.
+Unlike a single analysis notebook, this project represents a **multi-workbook data system**, progressing from raw data ingestion to business strategy.
 
 ---
 
-## ❓ This Project Answers
+## 🔧 Data Pipeline (Workbooks 1–7)
 
-- What is driving revenue growth: order volume or order value?
-- When does demand peak by hour and day of week?
-- How do weekday and weekend ordering patterns differ?
-- Which order types dominate peak demand periods?
-- How can order behavior be grouped into actionable personas?
+A structured data pipeline was built to transform raw Clover POS exports into a clean, analysis-ready dataset.
 
----
+Key steps included:
 
-## 🧰 Tools & Skills Demonstrated
+* Cleaning and parsing irregular POS report exports
+* Identifying true header rows within noisy files
+* Standardizing column names and data types
+* Handling SKU naming inconsistencies (e.g., size variants)
+* Mapping categories and product hierarchies
+* Engineering `realized_revenue` (net of discounts)
+* Creating deterministic, reproducible transformations
 
-- Python (pandas, matplotlib)
-- Exploratory Data Analysis (EDA)
-- Time-based analysis
-- Behavioral segmentation
-- Analytical storytelling
-- Handling real-world data limitations
-
----
-## 🗂️ Project Structure
-
-```text
-pizza-house-sales-analysis/
-├── notebooks/
-│   ├── 02_order_items_exploratory_analysis.ipynb
-│   └── 03_order_and_customer_segmentation.ipynb
-├── data/
-│   ├── raw/
-│   └── cleaned/
-├── README.md
-└── .gitignore
-
-```
+This pipeline ensures all downstream analysis is built on reliable, consistent data.
 
 ---
 
-## 🔍 Analysis Overview
+## 🎯 Objectives
 
-### Phase 2 – Exploratory Analysis
-- Revenue and order volume trends
-- Average order value (AOV) stability
-- Order type distribution
-- Peak hours and day-of-week patterns
-
-**Key takeaway:**  
-Revenue growth is driven primarily by **order volume**, not higher spend per order.
+* Identify which menu items (SKUs) drive the majority of revenue
+* Quantify the impact of discounts on realized revenue
+* Detect structural pricing and promotion inefficiencies
+* Prioritize high-impact opportunities for revenue optimization
 
 ---
 
-### Phase 4 – Order-Level Segmentation
-- Order value tiers (low, mid, high)
-- Time-of-day and day-of-week demand
-- Weekday vs weekend behavior
-- Order type interaction (pickup vs other)
+## 🔍 Revenue Optimization (Workbook 8)
 
-**Key findings:**
-- Demand is concentrated in late afternoon and evening hours.
-- Weekends amplify weekday behavior rather than changing it.
-- Pickup orders dominate across all time windows.
-- Order value is continuous rather than forming distinct customer groups.
+### 🥇 Revenue Concentration (Pareto Effect)
+
+* ~20–25% of SKUs generate ~80% of total revenue
+* Revenue is concentrated but not overly dependent on a small set of items
+
+![Pareto Chart](visuals/pareto.png)
 
 ---
 
-### Phase 5 – Demand Forecasting & Operational Planning
-- Daily and hourly demand baselines using historical data
-- Peak vs off-peak demand identification
-- Translation of demand into labor hours and staffing needs
-- Scenario planning under low, baseline, and high demand assumptions
+### 💸 Discount Behavior
 
-**Key findings:**
-- Baseline staffing requirements are stable and align with current operations.
-- Staffing behaves as a **step function**, not a smooth curve.
-- A +20% demand increase consistently triggers the need for additional staff.
-- Flexible or on-call staffing is more effective than permanent headcount increases.
+* Most SKUs exhibit minimal discount pressure
+* Discounting is concentrated in a small subset of items
+* Indicates strong pricing power across the majority of the menu
+
+![Discount Distribution](visuals/discount_distribution.png)
 
 ---
 
-## 🧍 Order-Level Behavioral Personas
+### 🚀 Opportunity Identification
 
-Due to the absence of a reliable order-to-customer identifier, the project
-concludes with **order-level behavioral personas**:
+* High-impact opportunities are concentrated in large and extra-large pizza SKUs
+* Suggests structural pricing inefficiencies at higher size tiers
+* Opportunity exists for targeted pricing adjustments rather than broad changes
 
-- **Weekend Dinner Pickup Orders**
-- **Weekday Core Orders**
-- **High-Value Evening Orders**
-- **Off-Peak Low-Value Orders**
-
-These personas support staffing, promotions, and timing-based strategy decisions.
+![Opportunity Chart](visuals/opportunity.png)
 
 ---
 
-## ⚠️ Data Limitations
+## 🧠 Strategic Recommendations
 
-Customer-level segmentation (e.g., RFM analysis) was not possible due to missing
-order-to-customer linkage in the POS data. This limitation is common in real-world
-POS systems and is documented transparently.
+* Focus optimization efforts on top revenue-driving SKUs
+* Reduce discounting on high-performing items where demand is strong
+* Re-evaluate pricing structure across size tiers (Medium → Large → XL)
+* Optimize bundle and combo pricing strategies
 
 ---
 
-## ✅ Final Outcome
+## 🔮 Next Phase — Customer & Order Segmentation (Workbook 9)
 
-This project delivers a complete, end-to-end analysis that moves from exploratory
-insight to operational decision support. By favoring clarity and explainability
-over complex modeling, the analysis produces actionable recommendations suitable
-for day-to-day restaurant operations.
+Upcoming analysis will extend the system to include customer behavior:
+
+* Segment customers by revenue contribution and frequency
+* Identify high-value and repeat customer groups
+* Analyze order patterns and purchase behavior
+* Connect customer segments to pricing and promotion strategy
+
+This will evolve the project from **menu optimization → full business intelligence system**.
+
+---
+
+## 🛠️ Tools & Technologies
+
+* Python (pandas, matplotlib)
+* Jupyter Notebook
+* Data cleaning & feature engineering
+* Exploratory data analysis
+* Business strategy modeling
+
+---
+
+## 📁 Project Structure
+
+* `notebooks/` → step-by-step analytical workbooks
+* `visuals/` → exported charts for presentation
+* `data/` → raw and cleaned datasets (not included for privacy)
+
+---
+
+## ⚠️ Notes
+
+Data files are not included in this repository.
+This project focuses on analysis methodology and business insights rather than raw data distribution.
+
+---
+
+## 👤 Author
+
+Fernando Romero
