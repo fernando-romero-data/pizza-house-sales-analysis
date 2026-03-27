@@ -4,9 +4,9 @@
 
 If you're reviewing this project:
 
-- 👉 Start with **Workbook 12** → Strategic Recommendations & Business Impact  
-- 👉 Then review **Workbook 11** → Demand Forecasting & Operations  
-- 👉 Then **Workbook 8–9** → Revenue Drivers & Order Behavior  
+- Start with **Workbook 12** → Strategic Recommendations & Business Impact
+- Then review **Workbook 11** → Demand Forecasting & Operations
+- Then **Workbooks 8–9** → Revenue Drivers & Order Behavior
 
 This project is designed as a **progressive analytics system**, not a single notebook.
 
@@ -16,10 +16,10 @@ This project is designed as a **progressive analytics system**, not a single not
 
 This project analyzes point-of-sale (POS) data from a pizza restaurant to uncover:
 
-- Revenue drivers  
-- Operational bottlenecks  
-- Customer order behavior  
-- High-impact growth opportunities  
+- Revenue drivers
+- Operational bottlenecks
+- Customer order behavior
+- High-impact growth opportunities
 
 The goal is to answer:
 
@@ -29,12 +29,12 @@ The goal is to answer:
 
 ## 🎯 What This Project Demonstrates
 
-- End-to-end data pipeline development  
-- Revenue decomposition and Pareto analysis  
-- Behavioral segmentation without customer linkage  
-- Demand forecasting (pandas-based)  
-- Operational modeling (staffing + throughput)  
-- Business strategy and decision-making  
+- End-to-end data pipeline development
+- Revenue decomposition and Pareto analysis
+- Behavioral segmentation without customer linkage
+- Demand forecasting (pandas-based)
+- Operational modeling (staffing + throughput)
+- Business strategy and decision-making
 
 ---
 
@@ -42,46 +42,46 @@ The goal is to answer:
 
 Built a structured pipeline to transform raw Clover POS exports into analysis-ready data:
 
-- Parsing irregular POS reports  
-- Identifying true headers in noisy files  
-- Standardizing schema and data types  
-- Resolving SKU naming inconsistencies  
-- Engineering revenue metrics  
-- Creating reproducible transformations  
+- Parsing irregular POS reports
+- Identifying true headers in noisy files
+- Standardizing schema and data types
+- Resolving SKU naming inconsistencies
+- Engineering revenue metrics
+- Creating reproducible transformations
 
-👉 Output: Clean, reliable dataset for all downstream analysis  
+Output: clean, reliable dataset for all downstream analysis.
 
 ---
 
 # 🔍 Revenue Optimization (Workbook 8)
 
-- Revenue follows a Pareto distribution  
-- Small subset of SKUs drives majority of sales  
-- Minimal discount pressure → strong pricing power  
-- Largest opportunity in higher-size pizzas  
+- Revenue follows a Pareto distribution
+- Small subset of SKUs drives majority of sales
+- Minimal discount pressure indicates strong pricing power
+- Largest opportunity appears in higher-size pizzas
 
 ---
 
 # 👥 Order Behavior & Segmentation (Workbook 9)
 
-- Order values are right-skewed  
-- ~20% of orders generate ~40% of revenue  
-- Peak demand: **4pm–7pm**  
-- Strong weekend uplift  
+- Order values are right-skewed
+- Around 20% of orders generate around 40% of revenue
+- Peak demand occurs between **4pm–7pm**
+- Strong weekend uplift is visible
 
-👉 Revenue is driven by **when and how customers order**
+Key takeaway: revenue is strongly influenced by **when and how customers order**.
 
 ---
 
 # ⚙️ Demand Forecasting & Operations (Workbook 11)
 
-- Revenue is **volume-driven**, not price-driven  
-- Peak hours are **capacity-constrained**  
-- Kitchen = primary bottleneck  
-- Cashier throughput limits intake during rush  
-- Off-peak = underutilized capacity  
+- Revenue is **volume-driven**, not price-driven
+- Peak hours are **capacity-constrained**
+- Kitchen is the primary bottleneck
+- Cashier throughput limits intake during rush periods
+- Off-peak hours show underutilized capacity
 
-👉 Revenue is constrained by execution, not demand  
+Key takeaway: revenue is constrained by execution, not demand.
 
 ---
 
@@ -89,30 +89,24 @@ Built a structured pipeline to transform raw Clover POS exports into analysis-re
 
 ## Baseline
 
-- AOV: ~30.70  
-- Annual Orders: ~50,000+  
-
----
+- Average Order Value (AOV): about **30.70**
+- Annual Orders: about **50,000+**
 
 ## Key Growth Levers
 
 ### 1. AOV Expansion
-- Increase revenue per order via:
-  - Bundles
-  - Upsells
-  - Spend thresholds  
-
----
+Increase revenue per order through:
+- Bundles
+- Upsells
+- Spend thresholds
 
 ### 2. Peak Throughput Optimization
-- Increase orders fulfilled during 4pm–7pm  
-- Highest revenue-per-hour impact  
-
----
+- Increase orders fulfilled during **4pm–7pm**
+- Highest revenue-per-hour impact
 
 ### 3. Off-Peak Demand Generation
-- Monetize idle capacity before 4pm  
-- Driven by promotions and combos  
+- Monetize idle capacity before 4pm
+- Driven by promotions and combos
 
 ---
 
@@ -120,56 +114,92 @@ Built a structured pipeline to transform raw Clover POS exports into analysis-re
 
 ## AOV Strategy
 
-- Spend 30 → free garlic bread  
-- Spend 40 → free soda  
-- Bundle optimization (family + multi-pizza deals)  
-- Upsells (size upgrades, add-ons)
-
----
+- Spend 30 → free garlic bread
+- Spend 40 → free soda
+- Bundle optimization through family and multi-pizza deals
+- Upsells through size upgrades and add-ons
 
 ## Time-Based Strategy
 
 - Off-Peak:
-  - 5–10% targeted discounts  
-  - Lunch combos  
+  - 5–10% targeted discounts
+  - Lunch combos
 
 - Peak:
-  - No discounts  
-  - Focus on AOV + speed  
+  - No discounts
+  - Focus on AOV and speed
 
 - Post-Peak:
-  - Light add-on incentives  
-
----
+  - Light add-on incentives
 
 ## Margin Discipline
 
-- Safe discount range: **5–10%**  
-- Avoid blanket discounting  
-- Use threshold-based incentives  
+- Safe discount range: **5–10%**
+- Avoid blanket discounting
+- Use threshold-based incentives
 
 ---
 
 # 📈 Business Impact
 
-- Increased revenue per order (AOV)  
-- Higher revenue during peak hours  
-- Improved labor efficiency  
-- Better utilization of existing capacity  
+- Increased revenue per order through AOV strategy
+- Higher revenue during peak hours through throughput improvements
+- Improved labor efficiency
+- Better utilization of existing capacity
 
 ---
 
 # 🔥 Final Takeaway
 
-> Revenue growth is not a pricing problem — it is an **operations and strategy problem**
+> Revenue growth is not just a pricing problem — it is an **operations and strategy problem**
 
 By aligning:
-- Demand patterns  
-- Menu structure  
-- Operational capacity  
+- Demand patterns
+- Menu structure
+- Operational capacity
 
-👉 The business can unlock significant growth **without major cost increases**
+the business can unlock significant growth **without major cost increases**.
 
 ---
 
 ## 📁 Repository Structure
+
+- `data/`
+  - `raw/`
+  - `cleaned/`
+
+- `notebooks/`
+  - `01_data_loading_and_cleaning.ipynb`
+  - `...`
+  - `11_demand_forecasting_and_operational_planning.ipynb`
+  - `12_strategic_recommendations_and_business_impact.ipynb`
+
+- `visuals/`
+  - `sku_revenue_concentration.png`
+  - `order_distribution_95pct.png`
+  - `...`
+
+- `README.md`
+
+---
+
+## 🛠️ Tools & Technologies
+
+- Python (pandas, matplotlib)
+- Jupyter Notebook
+- Data cleaning and transformation
+- Exploratory data analysis
+- Business strategy modeling
+
+---
+
+## ⚠️ Notes
+
+- Data is not included for privacy
+- Focus is on methodology and business insight
+
+---
+
+## 👤 Author
+
+Fernando Romero
