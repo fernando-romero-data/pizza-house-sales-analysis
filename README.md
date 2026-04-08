@@ -2,204 +2,154 @@
 
 ## 🚀 Start Here
 
-If you're reviewing this project:
-
-- Start with **Workbook 12** → Strategic Recommendations & Business Impact
-- Then review **Workbook 11** → Demand Forecasting & Operations
-- Then **Workbooks 8–9** → Revenue Drivers & Order Behavior
-
-This project is designed as a **progressive analytics system**, not a single notebook.
+* Start with **Workbook 12** → Strategic Recommendations
+* Then **Workbook 13** → Customer Data & Revenue Activation
+* Then **Workbook 11** → Operations
+* Then **Workbooks 8–9** → Revenue Drivers
 
 ---
 
 ## 📊 Overview
 
-This project analyzes point-of-sale (POS) data from a pizza restaurant to uncover:
+This project analyzes POS data to uncover:
 
-- Revenue drivers
-- Operational bottlenecks
-- Customer order behavior
-- High-impact growth opportunities
+* Revenue drivers
+* Operational bottlenecks
+* Customer behavior
+* Growth opportunities
 
-The goal is to answer:
-
-> How can this business increase revenue **without increasing costs?**
+> Goal: Increase revenue **without increasing costs**
 
 ---
 
-## 🎯 What This Project Demonstrates
+# 🔍 Revenue Concentration (Workbook 8)
 
-- End-to-end data pipeline development
-- Revenue decomposition and Pareto analysis
-- Behavioral segmentation without customer linkage
-- Demand forecasting (pandas-based)
-- Operational modeling (staffing + throughput)
-- Business strategy and decision-making
+![Revenue Concentration](visuals/sku_revenue_concentration.png)
+
+* Revenue follows a Pareto distribution
+* Small number of SKUs drive majority of revenue
 
 ---
 
-## 🔧 Data Pipeline (Workbooks 1–7)
+# 📦 Order Distribution
 
-Built a structured pipeline to transform raw Clover POS exports into analysis-ready data:
+![Order Distribution](visuals/order_distribution_95pct.png)
 
-- Parsing irregular POS reports
-- Identifying true headers in noisy files
-- Standardizing schema and data types
-- Resolving SKU naming inconsistencies
-- Engineering revenue metrics
-- Creating reproducible transformations
-
-Output: clean, reliable dataset for all downstream analysis.
+* Orders are right-skewed
+* High-value orders drive disproportionate revenue
 
 ---
 
-# 🔍 Revenue Optimization (Workbook 8)
+# ⏰ Demand Patterns
 
-- Revenue follows a Pareto distribution
-- Small subset of SKUs drives majority of sales
-- Minimal discount pressure indicates strong pricing power
-- Largest opportunity appears in higher-size pizzas
+![Revenue by Hour](visuals/revenue_by_hour_segment.png)
 
----
-
-# 👥 Order Behavior & Segmentation (Workbook 9)
-
-- Order values are right-skewed
-- Around 20% of orders generate around 40% of revenue
-- Peak demand occurs between **4pm–7pm**
-- Strong weekend uplift is visible
-
-Key takeaway: revenue is strongly influenced by **when and how customers order**.
+* Peak: **4pm–7pm**
+* Strong weekend lift
 
 ---
 
-# ⚙️ Demand Forecasting & Operations (Workbook 11)
+# ⚙️ Operations Insight (Workbook 11)
 
-- Revenue is **volume-driven**, not price-driven
-- Peak hours are **capacity-constrained**
-- Kitchen is the primary bottleneck
-- Cashier throughput limits intake during rush periods
-- Off-peak hours show underutilized capacity
+* Peak hours are **capacity constrained**
+* Kitchen is bottleneck
+* Off-peak = underutilized
 
-Key takeaway: revenue is constrained by execution, not demand.
+> Revenue is constrained by execution, not demand
 
 ---
 
-# 💰 Revenue Impact Modeling (Workbook 12)
+# 💰 Strategy Layer (Workbook 12)
 
-## Baseline
+![Opportunity](visuals/opportunity.png)
 
-- Average Order Value (AOV): about **30.70**
-- Annual Orders: about **50,000+**
-
-## Key Growth Levers
-
-### 1. AOV Expansion
-Increase revenue per order through:
-- Bundles
-- Upsells
-- Spend thresholds
-
-### 2. Peak Throughput Optimization
-- Increase orders fulfilled during **4pm–7pm**
-- Highest revenue-per-hour impact
-
-### 3. Off-Peak Demand Generation
-- Monetize idle capacity before 4pm
-- Driven by promotions and combos
+* AOV expansion (bundles, upsells)
+* Peak throughput optimization
+* Off-peak demand generation
 
 ---
 
-# 🧠 Business Strategy Layer
+# 📱 Customer Data & Revenue Activation (Workbook 13)
 
-## AOV Strategy
+## 📊 Customer Dataset Overview
 
-- Spend 30 → free garlic bread
-- Spend 40 → free soda
-- Bundle optimization through family and multi-pizza deals
-- Upsells through size upgrades and add-ons
+![Customer Dataset Overview](visuals/customer_dataset_overview.png)
 
-## Time-Based Strategy
-
-- Off-Peak:
-  - 5–10% targeted discounts
-  - Lunch combos
-
-- Peak:
-  - No discounts
-  - Focus on AOV and speed
-
-- Post-Peak:
-  - Light add-on incentives
-
-## Margin Discipline
-
-- Safe discount range: **5–10%**
-- Avoid blanket discounting
-- Use threshold-based incentives
+* ~24K customers
+* 100% phone coverage
+* Minimal email / consent
 
 ---
 
-# 📈 Business Impact
+## 📉 Contact Coverage Problem
 
-- Increased revenue per order through AOV strategy
-- Higher revenue during peak hours through throughput improvements
-- Improved labor efficiency
-- Better utilization of existing capacity
+![Customer Contact Coverage](visuals/customer_contact_coverage.png)
 
----
+* Email ≈ 0.4%
+* Marketing consent ≈ 2.5%
 
-# 🔥 Final Takeaway
-
-> Revenue growth is not just a pricing problem — it is an **operations and strategy problem**
-
-By aligning:
-- Demand patterns
-- Menu structure
-- Operational capacity
-
-the business can unlock significant growth **without major cost increases**.
+👉 Most customers are **not marketable**
 
 ---
 
-## 📁 Repository Structure
+## 🔍 Attempted Frequency Analysis
 
-- `data/`
-  - `raw/`
-  - `cleaned/`
+![Customer Frequency Limitation](visuals/customer_frequency_limit.png)
 
-- `notebooks/`
-  - `01_data_loading_and_cleaning.ipynb`
-  - `...`
-  - `11_demand_forecasting_and_operational_planning.ipynb`
-  - `12_strategic_recommendations_and_business_impact.ipynb`
+* No repeat behavior detected
 
-- `visuals/`
-  - `sku_revenue_concentration.png`
-  - `order_distribution_95pct.png`
-  - `...`
-
-- `README.md`
+👉 Not a data issue — a **system issue**
 
 ---
 
-## 🛠️ Tools & Technologies
+## ⚠️ Root Cause: POS Limitation
 
-- Python (pandas, matplotlib)
-- Jupyter Notebook
-- Data cleaning and transformation
-- Exploratory data analysis
-- Business strategy modeling
+![POS Limitation](visuals/pos_data_limitation.png)
 
----
-
-## ⚠️ Notes
-
-- Data is not included for privacy
-- Focus is on methodology and business insight
+* Orders not linked to customers
+* No retention / LTV possible
 
 ---
 
-## 👤 Author
+## 💰 Solution: Revenue Activation System
+
+![Revenue Strategy](visuals/revenue_activation_strategy.png)
+
+* SMS campaign using phone numbers
+* Grand reopening positioning
+* Reply-based validation
+
+---
+
+## 🚀 Real-World Execution
+
+* ~9,500 customer SMS dataset built
+* Batched rollout strategy
+* Engagement used as validation layer
+
+---
+
+## 🔥 Final Insight
+
+> The problem is not lack of data — it’s lack of **connection and activation**
+
+---
+
+# 📁 Repo Structure
+
+* `data/`
+* `notebooks/`
+* `visuals/`
+
+---
+
+# 🛠️ Tools
+
+* Python (pandas, matplotlib)
+* Jupyter
+
+---
+
+# 👤 Author
 
 Fernando Romero
