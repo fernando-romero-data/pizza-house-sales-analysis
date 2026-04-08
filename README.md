@@ -123,6 +123,8 @@ This project analyzes POS data to uncover:
 
 ## 🚀 Real-World Execution
 
+![Customer Data Quality](visuals/customer_data_quality_distribution.png)
+
 * ~9,500 customer SMS dataset built
 * Batched rollout strategy
 * Engagement used as validation layer
