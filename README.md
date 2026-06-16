@@ -8,6 +8,11 @@
 * Then **Workbooks 8–9** → Revenue Drivers
 * Finish with **Workbooks 14–15** → Tableau Executive Intelligence Layer
 
+### 📊 Interactive Tableau Dashboard
+
+**Tableau Public:**
+https://public.tableau.com/app/profile/fernando.romero4463/viz/wb15_tableau_revenue_dashboard/PizzaHouseRevenueAnalyticsDashboard2025?publish=yes
+
 ---
 
 ## 📊 Overview
@@ -157,6 +162,10 @@ The dashboard consolidates four complementary perspectives of revenue performanc
 * Revenue concentration by spending segment
 * Revenue contribution by fulfillment channel
 * Revenue patterns throughout the day
+
+### 🔗 Live Dashboard
+
+https://public.tableau.com/app/profile/fernando.romero4463/viz/wb15_tableau_revenue_dashboard/PizzaHouseRevenueAnalyticsDashboard2025?publish=yes
 
 ---
 
