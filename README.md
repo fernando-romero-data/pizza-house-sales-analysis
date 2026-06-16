@@ -6,6 +6,7 @@
 * Then **Workbook 13** → Customer Data & Revenue Activation
 * Then **Workbook 11** → Operations
 * Then **Workbooks 8–9** → Revenue Drivers
+* Finish with **Workbooks 14–15** → Tableau Executive Intelligence Layer
 
 ---
 
@@ -17,8 +18,9 @@ This project analyzes POS data to uncover:
 * Operational bottlenecks
 * Customer behavior
 * Growth opportunities
+* Executive business intelligence insights
 
-> Goal: Increase revenue **without increasing costs**
+> Goal: Identify revenue growth opportunities through operational optimization, customer activation, and business intelligence.
 
 ---
 
@@ -137,21 +139,115 @@ This project analyzes POS data to uncover:
 
 ---
 
+# 📊 Tableau Executive Intelligence Layer (Workbooks 14–15)
+
+## 🧠 From Analysis → Business Intelligence
+
+The final phase of this project transformed analytical findings into recruiter-ready Tableau dashboards designed for executive storytelling and operational decision-making.
+
+---
+
+## 📈 Revenue Analytics Dashboard
+
+![Revenue Dashboard](dashboards/PH_15_01_Revenue_Analytics_Dashboard.png)
+
+The dashboard consolidates four complementary perspectives of revenue performance:
+
+* Revenue trends across the full year
+* Revenue concentration by spending segment
+* Revenue contribution by fulfillment channel
+* Revenue patterns throughout the day
+
+---
+
+## 📅 Monthly Revenue Trend (2025)
+
+* Revenue remained relatively stable throughout 2025
+* Moderate seasonal fluctuations were observed
+* No evidence of structural decline
+
+---
+
+## 💳 Revenue by Order Segment
+
+* **Very High** and **High** spending segments generated the majority of revenue
+* Low-value transactions contributed minimally despite higher frequency
+
+> Revenue growth is more likely to come from increasing AOV than increasing transaction volume.
+
+---
+
+## 🚗 Revenue by Order Type
+
+* Pick Up remained the dominant fulfillment channel
+* Delivery represented a secondary revenue stream
+* Alternative channels contributed relatively little to overall performance
+
+> Operational improvements should prioritize the highest-performing channels first.
+
+---
+
+## ⏰ Hourly Revenue Pattern
+
+* Revenue peaked during the late afternoon and early evening
+* Demand tapered significantly outside peak operating windows
+
+> Staffing decisions should align with observed demand patterns.
+
+---
+
+## 🎯 Tableau Deliverables
+
+* Interactive Tableau Revenue Dashboard
+* Dashboard-ready analytical dataset
+* Tableau Public portfolio asset
+* GitHub business intelligence showcase
+* LinkedIn Featured integration
+
+---
+
+## 🔥 Final Insight
+
+> The greatest opportunity for Pizza House lies in optimizing execution during existing demand peaks while increasing value captured from each transaction.
+
+---
+
 # 📁 Repo Structure
 
-* `data/`
-* `notebooks/`
-* `visuals/`
+```text
+pizza-house-sales-analysis/
+│
+├── data/
+│   ├── raw/
+│   └── cleaned/
+│       └── orders_2025_tableau.csv
+│
+├── notebooks/
+│   ├── 14_tableau_executive_intelligence_layer.ipynb
+│   └── 15_tableau_executive_dashboard_suite.ipynb
+│
+├── dashboards/
+│   ├── wb15_tableau_revenue_dashboard.twbx
+│   └── PH_15_01_Revenue_Analytics_Dashboard.png
+│
+├── visuals/
+│
+└── README.md
+```
 
 ---
 
 # 🛠️ Tools
 
 * Python (pandas, matplotlib)
-* Jupyter
+* SQL (DuckDB)
+* Tableau Public
+* Jupyter Notebook
 
 ---
 
 # 👤 Author
 
-Fernando Romero
+**Fernando Romero**
+
+Revenue & Operations Analytics | SQL • Python • Tableau | Forecasting • Business Intelligence • Operational Strategy
