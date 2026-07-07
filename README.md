@@ -5,13 +5,18 @@
 * Start with **Workbook 12** → Strategic Recommendations
 * Then **Workbook 13** → Customer Data & Revenue Activation
 * Then **Workbook 11** → Operations
-* Then **Workbooks 8–9** → Revenue Drivers
-* Finish with **Workbooks 14–15** → Tableau Executive Intelligence Layer
+* Then **Workbooks 14–15** → Tableau Executive Intelligence Layer
+* Finish with **Workbooks 16–18** → Geographic Intelligence & Customer Activation Analytics
 
-### 📊 Interactive Tableau Dashboard
+### 📊 Interactive Tableau Dashboards
 
-**Tableau Public:**
-https://public.tableau.com/app/profile/fernando.romero4463/viz/wb15_tableau_revenue_dashboard/PizzaHouseRevenueAnalyticsDashboard2025?publish=yes
+**Revenue Analytics Dashboard**
+
+https://public.tableau.com/app/profile/fernando.romero4463/viz/wb15_tableau_revenue_dashboard/PizzaHouseRevenueAnalyticsDashboard2025
+
+**Geographic Intelligence Dashboard**
+
+https://public.tableau.com/app/profile/fernando.romero4463/viz/wb18_pizza_house_geographic_intelligence_dashboard/08_Executive_Dashboard
 
 ---
 
@@ -221,6 +226,80 @@ https://public.tableau.com/app/profile/fernando.romero4463/viz/wb15_tableau_reve
 
 ---
 
+---
+
+# 🌎 Geographic Intelligence Layer (Workbooks 16–18)
+
+## 🧠 From Revenue Intelligence → Geographic Intelligence
+
+The second Tableau intelligence layer extends the Pizza House analytics platform beyond revenue optimization into customer geography and marketing intelligence.
+
+Using the SMS Customer Activation System developed in Workbook 16 and the customer geocoding pipeline created in Workbook 17, customer addresses were transformed into geographic coordinates to support neighborhood-level business intelligence and localized marketing analysis.
+
+The Geographic Intelligence Dashboard identifies where customers are located, where verified engagement occurred, and where future marketing opportunities remain.
+
+---
+
+## 🗺️ Geographic Intelligence Dashboard
+
+![Geographic Intelligence Dashboard](dashboards/GI_07_Executive_Dashboard.png)
+
+The dashboard combines customer distribution, verified engagement, marketable customer coverage, and geographic response-rate analytics into a single executive dashboard.
+
+### 🔗 Live Dashboard
+
+https://public.tableau.com/app/profile/fernando.romero4463/viz/wb18_pizza_house_geographic_intelligence_dashboard/08_Executive_Dashboard
+
+---
+
+## 📍 Customer Density
+
+* Approximately **9,500+** geocoded customer records
+* Customer footprint concentrated throughout the Sacramento metropolitan area
+* Geographic visualization supports neighborhood-level business planning
+
+---
+
+## 📬 Customer Activation Intelligence
+
+* **445** verified customer responses
+* **8,538** marketable customers identified
+* **29** represented ZIP codes
+* Geographic segmentation supports future SMS campaigns and localized marketing
+
+---
+
+## 📊 Geographic Business Intelligence
+
+The Geographic Intelligence Dashboard provides multiple perspectives of customer engagement:
+
+* Customer Density Map
+* Customers by ZIP
+* Verified Customers by ZIP
+* Marketable Customers by ZIP
+* Verified Response Rate by ZIP
+
+Together these visualizations provide an executive view of customer distribution, campaign engagement, and future marketing opportunities across the Pizza House service area.
+
+---
+
+## 🎯 Tableau Deliverables
+
+* Interactive Geographic Intelligence Dashboard
+* Customer geocoding pipeline
+* Geographic intelligence dataset
+* Tableau Public portfolio asset
+* GitHub business intelligence showcase
+* LinkedIn Featured integration
+
+---
+
+## 🔥 Final Insight
+
+> Revenue optimization explains **how** the business performs, while geographic intelligence reveals **where** future customer growth opportunities exist.
+
+Together, the Revenue Analytics Dashboard and Geographic Intelligence Dashboard provide complementary executive views of Pizza House operations, customer engagement, and future marketing strategy.
+---
 # 📁 Repo Structure
 
 ```text
@@ -233,11 +312,16 @@ pizza-house-sales-analysis/
 │
 ├── notebooks/
 │   ├── 14_tableau_executive_intelligence_layer.ipynb
-│   └── 15_tableau_executive_dashboard_suite.ipynb
+│   ├── 15_tableau_executive_dashboard_suite.ipynb
+│   ├── 16_sms_customer_activation_analytics.ipynb
+│   ├── 17_customer_geocoding_system.ipynb
+│   └── 18_geographic_intelligence_dashboard.ipynb
 │
 ├── dashboards/
 │   ├── wb15_tableau_revenue_dashboard.twbx
-│   └── PH_15_01_Revenue_Analytics_Dashboard.png
+│   ├── wb18_pizza_house_geographic_intelligence_dashboard.twbx
+│   ├── PH_15_01_Revenue_Analytics_Dashboard.png
+│   └── GI_07_Executive_Dashboard.png
 │
 ├── visuals/
 │
