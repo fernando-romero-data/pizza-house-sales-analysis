@@ -321,7 +321,7 @@ pizza-house-sales-analysis/
 │   ├── wb15_tableau_revenue_dashboard.twbx
 │   ├── wb18_pizza_house_geographic_intelligence_dashboard.twbx
 │   ├── PH_15_01_Revenue_Analytics_Dashboard.png
-│   └── GI_07_Executive_Dashboard.png
+│   └── GI_18_01_Geographic_Intelligence_Dashboard.png
 │
 ├── visuals/
 │
