@@ -242,7 +242,7 @@ The Geographic Intelligence Dashboard identifies where customers are located, wh
 
 ## 🗺️ Geographic Intelligence Dashboard
 
-![Geographic Intelligence Dashboard](dashboards/GI_07_Executive_Dashboard.png)
+![Geographic Intelligence Dashboard](dashboards/GI_18_01_Geographic_Intelligence_Dashboard.png)
 
 The dashboard combines customer distribution, verified engagement, marketable customer coverage, and geographic response-rate analytics into a single executive dashboard.
 
