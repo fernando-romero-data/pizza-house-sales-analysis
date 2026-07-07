@@ -226,8 +226,6 @@ https://public.tableau.com/app/profile/fernando.romero4463/viz/wb15_tableau_reve
 
 ---
 
----
-
 # 🌎 Geographic Intelligence Layer (Workbooks 16–18)
 
 ## 🧠 From Revenue Intelligence → Geographic Intelligence
